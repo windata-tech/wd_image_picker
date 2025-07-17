@@ -18,7 +18,8 @@ flutter:
         pluginClass: FileSelectorAndroidPlugin
 
 dependencies:
-  file_selector_platform_interface: ^2.5.0
+  file_selector_platform_interface:
+    path: ../file_selector_platform_interface
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.1.7
