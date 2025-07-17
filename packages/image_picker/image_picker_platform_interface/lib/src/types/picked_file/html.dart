@@ -5,7 +5,7 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:http/http.dart' as http show readBytes;
+// import 'package:http/http.dart' as http show readBytes;
 
 import './base.dart';
 
@@ -29,7 +29,8 @@ class PickedFile extends PickedFileBase {
     if (_initBytes != null) {
       return _initBytes.asUnmodifiableView();
     }
-    return http.readBytes(Uri.parse(path));
+    // return http.readBytes(Uri.parse(path));
+    throw UnimplementedError('readBytes not implemented on web');
   }
 
   @override
